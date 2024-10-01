@@ -50,8 +50,7 @@ namespace Grupo_05_Calculadora
             }
             else if (rb_Divicion.Checked)
             {
-                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
-                /*if (segundoNumero != 0)
+                if (segundoNumero != 0)
                 {
                     resultado = primerNumero / segundoNumero;
                     operacion = " / ";
