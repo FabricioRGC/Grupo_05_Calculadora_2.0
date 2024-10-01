@@ -38,9 +38,8 @@ namespace Grupo_05_Calculadora
             }
             else if (rb_Resta.Checked)
             {
-                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
-                /*resultado = primerNumero - segundoNumero;
-                operacion = " - ";*/
+                resultado = primerNumero - segundoNumero;
+                operacion = " - ";
             }
             else if (rb_Multiplicacion.Checked)
             {
@@ -69,15 +68,14 @@ namespace Grupo_05_Calculadora
             }
             else if (rb_Porcentaje.Checked)
             {
-                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
-                /*resultado = (primerNumero * segundoNumero) / 100;
-                operacion = " % ";*/
+                
+                resultado = (primerNumero * segundoNumero) / 100;
+                operacion = " % ";
             }
 
             lb_Resultado.Text = resultado.ToString();
 
-            //string operacionHistorial = $"Operación: {primerNumero} {operacion} {segundoNumero}  =  {resultado}";
-            string operacionHistorial = "No signal: ";
+            string operacionHistorial = $"Operación: {primerNumero} {operacion} {segundoNumero}  =  {resultado}";
             historial.Add(operacionHistorial);
 
             lst_Historial.Items.Add(operacionHistorial);
