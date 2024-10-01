@@ -58,7 +58,7 @@ namespace Grupo_05_Calculadora
                 {
                     MessageBox.Show("No se puede dividir entre cero.");
                     return;
-                }*/
+                }
             }
             else if (rb_Potencia.Checked)
             {
