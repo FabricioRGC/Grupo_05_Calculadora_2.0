@@ -33,9 +33,8 @@ namespace Grupo_05_Calculadora
 
             if (rb_Suma.Checked)
             {
-                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
-                /*resultado = primerNumero + segundoNumero;
-                operacion = " + ";*/
+                resultado = primerNumero + segundoNumero;
+                operacion = " + ";
             }
             else if (rb_Resta.Checked)
             {
@@ -90,6 +89,9 @@ namespace Grupo_05_Calculadora
             Application.Exit();
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
