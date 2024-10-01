@@ -33,23 +33,26 @@ namespace Grupo_05_Calculadora
 
             if (rb_Suma.Checked)
             {
+                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
                 resultado = primerNumero + segundoNumero;
                 operacion = " + ";
             }
             else if (rb_Resta.Checked)
             {
-                resultado = primerNumero - segundoNumero;
-                operacion = " - ";
+                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
+                /*resultado = primerNumero - segundoNumero;
+                operacion = " - ";*/
             }
             else if (rb_Multiplicacion.Checked)
             {
-                
-                resultado = primerNumero * segundoNumero;
-                operacion = " x ";
+                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
+                /*resultado = primerNumero * segundoNumero;
+                operacion = " x ";*/
             }
             else if (rb_Divicion.Checked)
             {
-                if (segundoNumero != 0)
+                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
+                /*if (segundoNumero != 0)
                 {
                     resultado = primerNumero / segundoNumero;
                     operacion = " / ";
@@ -58,23 +61,25 @@ namespace Grupo_05_Calculadora
                 {
                     MessageBox.Show("No se puede dividir entre cero.");
                     return;
-                }
+                }*/
             }
             else if (rb_Potencia.Checked)
             {
-                resultado = Math.Pow(primerNumero, segundoNumero);
-                operacion = " ^ ";
+                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
+                /*resultado = Math.Pow(primerNumero, segundoNumero);
+                operacion = " ^ ";*/
             }
             else if (rb_Porcentaje.Checked)
             {
-                
-                resultado = (primerNumero * segundoNumero) / 100;
-                operacion = " % ";
+                MessageBox.Show("Ejecucion no validad, por falta de codigo.");
+                /*resultado = (primerNumero * segundoNumero) / 100;
+                operacion = " % ";*/
             }
 
             lb_Resultado.Text = resultado.ToString();
 
-            string operacionHistorial = $"Operación: {primerNumero} {operacion} {segundoNumero}  =  {resultado}";
+            //string operacionHistorial = $"Operación: {primerNumero} {operacion} {segundoNumero}  =  {resultado}";
+            string operacionHistorial = "No signal: ";
             historial.Add(operacionHistorial);
 
             lst_Historial.Items.Add(operacionHistorial);
